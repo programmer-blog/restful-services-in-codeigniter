@@ -1,70 +1,65 @@
 ###################
-What is CodeIgniter
+Programmer Blog - RESTful Webservices in CodeIgniter
 ###################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+Download code or clone repository in to your system
 
 *******************
-Release Information
+Create a MYSQL database
 *******************
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+Create a MySQL database `dbbookstore` using phpMyAdmin
 
 **************************
-Changelog and New Features
+Create books table by running sql code into SQL tab of phpmyadmin
 **************************
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+```
+DROP TABLE IF EXISTS `tbl_books`;
+CREATE TABLE IF NOT EXISTS `tbl_books` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(500) NOT NULL,
+  `price` float(8,2) NOT NULL,
+  `author` varchar(300) NOT NULL,
+  `category` varchar(250) NOT NULL,
+  `language` varchar(100) NOT NULL,
+  `ISBN` varchar(40) NOT NULL,
+  `publish_date` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_books`
+--
+
+INSERT INTO `tbl_books` (`id`, `name`, `price`, `author`, `category`, `language`, `ISBN`, `publish_date`) VALUES
+(1, 'Red Hat Enterprise Linux 6 Administration', 50.00, 'Sander van', 'Computer Science', 'en', '984-1234-12341234', '2013-12-05'),
+(2, 'Design Patterns: Elements of Reusable Object-Oriented Software ', 15.11, 'Ralph Johnson, John Vlissides, Grady Booch', 'Computer Science', 'en', '978-0201633610', '2016-03-01'),
+(3, 'Machine Learning for Absolute Beginners\r\n', 10.36, 'Oliver Theobald', 'Computer Science', 'en', '123-58679-654', '2016-08-01'),
+(4, 'Python Crash Course: A Hands-On, Project-Based Introduction to Programming', 21.58, ' Eric Matthes', 'Programming', 'en', '659-8546-324', '2015-11-30'),
+(5, 'Data Structures and Algorithms in Java', 102.65, 'Michael T. Goodrich, Roberto Tamassia, Michael H. Goldwasser', 'Computer Science', 'en', ' 978-1118777788', '2014-06-23'),
+(6, 'Star Wars: Darth Vader Vol. 1: Vader', 26.54, 'Kieron Gillen', 'Comic Novels', 'en', '485-6582-658', '2015-09-16'),
+(7, 'Star Wars Vol. 1: Skywalker Strikes', 16.23, 'Jason Aron', 'Novels', 'en', '159-7539-985', '2011-04-11'),
+(8, 'Phonics for Kindergarten, Grade K ', 6.32, 'Carson-Dellosa Publishing ', 'Education', 'en', '412-6548-7854', '2016-08-10'),
+(9, 'Astrophysics for People in a Hurry ', 9.95, 'Astrophysics for People in a Hurry ', 'Science', 'en', '654-71235-654', '2010-10-02'),
+(10, 'Let\'s Review Algebra I', 8.54, 'Gary Rubinstein (Author) ', 'Science', 'en', '978-1438009854', '2006-03-24');
+COMMIT;
+
+```
 
 *******************
-Server Requirements
+Install Postman extension of Google Chrome
 *******************
 
-PHP version 5.6 or newer is recommended.
-
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+In Postman, you can test all the HTTP methods.
 
 ************
-Installation
+To read a detailed tutorial please visit
 ************
-
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
+ <http://programmerblog.net/create-restful-web-services-in-codeigniter>`_
 
 *******
-License
+Programmer Blog
 *******
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+` <http://programmerblog.net/create-restful-web-services-in-codeigniter/>`_.
