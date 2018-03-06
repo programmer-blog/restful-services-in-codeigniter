@@ -26,7 +26,7 @@ Install Postman extension of Google Chrome
 In Postman, you can test all the HTTP methods.
 
 ************
-To read a detailed tutorial please visit
+To read a detailed tutorial.
 ************
 `http://programmerblog.net/create-restful-web-services-in-codeigniter`
 
