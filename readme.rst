@@ -14,9 +14,7 @@ Create a MySQL database `dbbookstore` using phpMyAdmin
 Create books table by running sql code into SQL tab of phpmyadmin
 **************************
 
-```
-
-DROP TABLE IF EXISTS tbl_books;
+``` DROP TABLE IF EXISTS tbl_books;
 
 CREATE TABLE IF NOT EXISTS tbl_books (
   id int(11) NOT NULL AUTO_INCREMENT,
@@ -56,9 +54,10 @@ INSERT INTO tbl_books (id, name, price, author, category, language, ISBN, publis
 
 (10, 'Let\'s Review Algebra I', 8.54, 'Gary Rubinstein (Author) ', 'Science', 'en', '978-1438009854', '2006-03-24');
 
-COMMIT;
+COMMIT; ```
 
-```
+
+
 
 *******************
 Install Postman extension of Google Chrome
