@@ -10,26 +10,14 @@ Create a MYSQL database
 
 Create a MySQL database `dbbookstore` using phpMyAdmin
 
+
 **************************
-Create books table by running sql code into SQL tab of phpmyadmin
+Create a books table
 **************************
+There is a ***db*** directory in the repository. This direcotry contains SQL commands for creating and populating data into SQL books table. 
 
-```
-DROP TABLE IF EXISTS tbl_books;
+Copy SQL commands and run in SQL tab of PHPMyAdmin.
 
-CREATE TABLE IF NOT EXISTS tbl_books (
-id int(11) NOT NULL AUTO_INCREMENT,
-name varchar(500) NOT NULL,
-price float(8,2) NOT NULL,
-author varchar(300) NOT NULL,
-category varchar(250) NOT NULL,
-language varchar(100) NOT NULL,
-ISBN varchar(40) NOT NULL,
-publish_date date NOT NULL,
-PRIMARY KEY (id)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
-
-```
 
 *******************
 Install Postman extension of Google Chrome
@@ -46,4 +34,5 @@ To read a detailed tutorial please visit
 Programmer Blog
 *******
 
- `<http://programmerblog.net/create-restful-web-services-in-codeigniter/>`
+ `http://programmerblog.net/create-restful-web-services-in-codeigniter/`
+
