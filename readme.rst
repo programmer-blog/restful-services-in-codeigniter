@@ -14,7 +14,7 @@ Create a MySQL database `dbbookstore` using phpMyAdmin
 **************************
 Create a books table
 **************************
-There is a ***db*** directory in the repository. This direcotry contains SQL commands for creating and populating data into SQL books table. 
+There is a **db** directory in the repository. This direcotry contains SQL commands for creating and populating data into SQL books table. 
 
 Copy SQL commands and run in SQL tab of PHPMyAdmin.
 
