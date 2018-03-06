@@ -34,5 +34,5 @@ To read a detailed tutorial.
 Programmer Blog
 *******
 
-`http://programmerblog.net/create-restful-web-services-in-codeigniter/`
+`http://programmerblog.net/`
 
