@@ -2,7 +2,7 @@
 Programmer Blog - RESTful Webservices in CodeIgniter
 ###################
 
-Download code or clone repository in to your system. If you have GIT installed in you system. On command line go to root direcotry (www or wwwroot) of your WAMP, MAMP or XAMPP directory.
+Download code or clone repository in to your system. If you have GIT installed. Open command line and go to root direcotry (www or wwwroot) of your WAMP, MAMP or XAMPP directory.
 
 Type following command.
 
