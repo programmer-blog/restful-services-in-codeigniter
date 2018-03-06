@@ -14,7 +14,7 @@ Create a MySQL database `dbbookstore` using phpMyAdmin
 Create books table by running sql code into SQL tab of phpmyadmin
 **************************
 
-``` 
+```
 
 	DROP TABLE IF EXISTS tbl_books;
 
@@ -29,7 +29,7 @@ Create books table by running sql code into SQL tab of phpmyadmin
   	publish_date date NOT NULL,
   	PRIMARY KEY (id)
 	) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
-
+	
 ```
 
 *******************
